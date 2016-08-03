@@ -109,6 +109,7 @@ display:inline;}
 
 
 .container{
+	    overflow: hidden;
 	width:960px;
 	margin: auto;
 	border-top:1px solid;
@@ -161,8 +162,13 @@ font-weight:bold;}
 .col2 a {text-decoration: none;
 margin-left:20px; 
 margin-top: 175px;
+
 }
 
+.col2 a img{
+
+	width:40px;
+}
 .col2 hr{
 
 	width: 180px;

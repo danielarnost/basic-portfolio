@@ -53,8 +53,9 @@ body{
 
 
 .container{
-	width:960px;
-	margin:auto;
+	overflow: hidden;
+max-width:960px;
+object-position: center;
 	border-top:1px solid #777777;
 
 }
@@ -152,9 +153,13 @@ color:#4aaaa5;
 margin-left:10px; 
 margin-top: 175px;
 margin right: 10px;
+display:inline;
 }
 
+.col2 a img{
 
+	width:40px;
+}
 
 div h2{
 	color:#4aaaa5;
