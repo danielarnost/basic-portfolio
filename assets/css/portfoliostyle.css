@@ -1,28 +1,34 @@
 header {
 
-margin:0 auto;
-
 background-color:white;
 border-bottom: 1px solid #777777;
+} 
+
+header #header{
+margin:0 auto;
+max-width: 960px;
+
 }
 
 header ul{
-
+line-height:10px;
 display:inline;
 float:right;
 margin-top:20px;
-
+margin-right:35px;
 }
 header a{
 	color:#777777;
-	margin-right: 50px;
+	
 	text-decoration:none;
 }
 
+
+
 #dan {
 	height: 20px;
-    width: 100px;
-	margin-left:100px;
+    
+	margin-left:10px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color:white;
 	background:#4aaaa5;
@@ -35,22 +41,15 @@ header a{
 
 body{
 
-
-	
+	/*ask if body Should have a max-width?*/
+	/*MArgin 0 auto sets left and right to auto and top and bottom to zero*/
 	margin:0 auto;
 	background-color:#dddddd;
 }
 
 
 
-.row {
-	width:500px;
-	margin:auto;
-	
-	background: white;
-	
-	
-}
+
 
 
 
@@ -73,23 +72,29 @@ li{
 
 
 .container .col1 h1{
-font-weight:bold;
 
+font-size: 25px;
+font-weight:bold;
+padding:10px;
 color:#4aaaa5;
 font-family: 'Georgia', Times, Times New Roman, serif;	
-	display:block;
+display:block;
 }
 .container .col1 img{ 
+	
+	padding:10px;
 	display:block; 
     height:150px;
     float:left;
 }
 
+.container .c2 {
+
+	margin-top: 30px;
+}
+
 .col2{
-
-
-margin-top: 10px;
-margin-right:50px;
+padding:20px;
 width:200px;
 display:inline;
 background: white;
@@ -121,17 +126,24 @@ text-decoration: none;
 text-decoration: none;
 	width:40px;
 }
-
+.container .col1 
+{
+	background: white;
+	overflow: hidden;
+	width:500px;
+	float:left;
+}
 
 .container{
 overflow: hidden;
 
 
-
+max-width:960px;
 margin-top:20px;
 margin-bottom:100px;
-}
+margin:100px auto;  
 
+}
 
 
 
@@ -143,9 +155,19 @@ footer{
 	background: #666666;
 	height: 50px;
 	text-align: center;
+	position:fixed;
+	overflow:hidden;
+	width:100%;
+	bottom:0;
+	
 }
+
 footer div{
 	color:white;
 	text-align:center;
 	padding:15px 0 15px 0;
+	
 }
+
+
+/* fixed and absolute positioning: fix footer to bottom*/
