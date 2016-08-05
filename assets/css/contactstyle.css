@@ -1,8 +1,13 @@
 header {
 max-width:100%;
-margin:0 auto;
 
+border-bottom:1px solid #777777;
 background-color:white;
+}
+
+header #header{
+margin:0 auto;
+max-width:960px;
 }
 
 header li{display:inline;}
@@ -46,23 +51,20 @@ header a{
 
 body{
 	
-	max-width:960px;
+
 	margin:0 auto;
 	background-color:#dddddd;
 }
 
 
-.container{
-	overflow: hidden;
-max-width:960px;
-object-position: center;
-	border-top:1px solid #777777;
+
+
+	
 
 }
 .row{ 
 
-	padding:0 0 0 100px;
-	border-color:#dddddd;
+	
  }
 
 
@@ -108,7 +110,7 @@ content:;
 	background color:white;
 }
 
-}
+
 .col1 #name {
 	line-height: 20px;
 }
@@ -186,10 +188,10 @@ display: inline;
 	padding-top: 20px
 }
 .container{
-	width:960px;
+	max-width:960px;
 	margin:auto;
 	border-top:1px solid color:#777777;
-
+	overflow: hidden;
 }
 .row{ 
 
@@ -254,13 +256,27 @@ margin:left:50px;
 margin-left: 20px;
 }
 
+.container{
+overflow: hidden;
+
+
+max-width:960px;
+margin-top:20px;
+margin-bottom:100px;
+margin:100px auto; 
+}
+
 
 footer{
-	width:960px;
+	
 	border-top:10px solid #4aaaa5;
 	background: #666666;
 	height: 50px;
 	text-align: center;
+	position:fixed;
+	overflow:hidden;
+	width:100%;
+	bottom:0;
 }
 footer div{
 	color:white;
