@@ -1,0 +1,111 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url(../images/brickwall.png);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #525252;
+}
+
+#start {
+  font-family: 'Chewy', cursive;  
+  font-size: 25px;
+}
+
+h1 {
+	font-family: 'Bungee Shade', cursive;
+  font-size: 70px;
+}
+
+.footer-text {
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.panel-title-text {
+  font-family: 'Chewy', cursive;
+  font-size: 22px;
+}
+
+#game-body {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#score-bar {
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+#score-mult {
+  font-style: italic;
+}
+
+.stats {
+  color: #d8d8d8;
+}
+
+#score-table {
+  font-family: 'Amatica SC', cursive;
+  font-size: 27px;
+}
+
+#leaderboard-panel {
+  height: 699px;
+}
+
+#instructions {
+  font-family: 'Amatica SC', cursive;
+  font-size: 25px;
+}
+
+.hipster-text {
+  font-family: 'Amatica SC', cursive;
+  font-size: 30px;
+}
+
+/* Matt's animations */
+.falling-word {
+  position: absolute;
+  top: -70px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.word-shake {
+  animation-name: wiggle;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+@keyframes wiggle {
+  0%   {transform: translate3d(-3px, 0, 0);}
+  25%  {transform: translate3d(6px, 0, 0);}
+  60%  {transform: translate3d(-6px, 0, 0);}
+  90%  {transform: translate3d(-3px, 0, 0);}
+  100% {transform: translate3d(0, 0, 0);}
+}
+
+/* Matt's classes */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 470px;
+}
